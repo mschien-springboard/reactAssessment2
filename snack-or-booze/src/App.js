@@ -2,7 +2,7 @@ import "./App.css";
 import { useState, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
 import { Route, Switch } from "react-router-dom";
-import {fetchItems, addItem} from "./Api";
+import { fetchItems, addItem } from "./Api";
 import slugify from 'slugify';
 import NavBar from "./NavBar";
 import Home from "./Home";
@@ -52,7 +52,7 @@ function App() {
         <main>
           <Switch>
             <Route exact path="/">
-              <Home snacks={snacks} drinks={drinks} />
+              <Home />
             </Route>
             <Route exact path="/snacks">
               <Menu items={snacks} title="Snacks" />
